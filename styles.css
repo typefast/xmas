@@ -1,0 +1,57 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+  color: #333;
+  padding: 1em 0;
+}
+
+h1 {
+  color: red;
+  font-size: 2em;
+}
+
+.instructions {
+  letter-spacing: 3px;
+}
+
+.crown {
+  position: absolute;
+  height: 20px;
+  width: 40px;
+  border-radius: 10px 10px 0 0;
+  top: -18px;
+  left: 40%;
+  background: #DAA520;
+}
+
+.line {
+  position: absolute;
+  width: 2px;
+  height: 120px;
+  background: #DAA520;
+  top: -120px;
+  left: 48.5%;
+}
+
+.circle {
+  position: relative;
+  padding: 6em 2em;
+  display: inline-block;
+  margin-top: 5em;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.circle:hover {
+  opacity: 1;
+  border-radius: 50%;
+  background: #911;
+  /*background: -webkit-radial-gradient(60% 60%, closest-side, #ccc, #911);*/
+}
+
+.circle:hover > .titleText {
+  color: #ddd;
+  text-shadow: 2px 2px 5px #eee;
+  transition: all 1s ease-in-out;
+}
